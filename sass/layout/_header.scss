@@ -1,0 +1,82 @@
+@use "../abstracts/abstracts" as abs;
+
+.hero-area {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+  h1 {
+    color: white;
+    font-family: abs.$secondary-font;
+    max-width: 550px;
+    font-size: 60px;
+    margin-bottom: 24px;
+  }
+
+  .sub {
+    color: abs.$font-color_1;
+    max-width: 430px;
+    margin-bottom: 32px;
+  }
+
+  .links {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 150px;
+
+    a {
+      color: white;
+    }
+
+    .link1 {
+      padding: 5px 30px;
+      background-color: abs.$secondary-color;
+      border-radius: 10px 10px 10px 0px;
+      text-decoration: none;
+
+      &:hover {
+        color: abs.$secondary-color;
+        background-color: white;
+      }
+    }
+
+    .link2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      &:hover {
+        color: abs.$secondary-color;
+      }
+    }
+  }
+
+  .hero-img {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    position: relative;
+    gap: 2%;
+
+    img {
+      width: 100%;
+    }
+
+    .bg-pink {
+      position: relative;
+      top: 20px;
+    }
+
+    .bg-orange {
+      position: relative;
+      bottom: 190px;
+    }
+
+    .bg-yellow {
+      position: relative;
+      top: 80px;
+    }
+  }
+}

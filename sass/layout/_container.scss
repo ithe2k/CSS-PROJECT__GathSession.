@@ -1,0 +1,14 @@
+@use '../abstracts/abstracts' as abs;
+
+body{
+    background-color:abs.$primary-color; ;
+}
+
+.container{
+    max-width: 100%;
+    background-color: abs.$primary-color;
+    padding: 10px 5%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: abs.$primary-font;
+}

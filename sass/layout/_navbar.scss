@@ -1,0 +1,48 @@
+@use "../abstracts/abstracts" as abs;
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35%;
+  margin-bottom: 50px;
+
+  .brand-logo {
+    padding: 0;
+    margin: 0;
+ 
+  }
+
+  .main-nav ul {
+    display: flex;
+    
+    list-style: none;
+    gap: 30px;
+
+     a {
+      text-decoration: none;
+      color: abs.$font-color_1;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      max-width: fit-content;
+
+      &:hover{
+         color: white;
+      }
+
+     
+    }
+     li .home {
+        color: white;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          height: 2px;
+          width: 50%;
+          background-color: abs.$secondary-color;
+        }
+      }
+  }
+}
